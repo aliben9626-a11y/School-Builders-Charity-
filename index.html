@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build Schools for Needy Communities</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://via.placeholder.com/1920x600?text=School+Construction') no-repeat center center;
+            background-size: cover;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        .donate-btn {
+            background-color: #28a745;
+            color: white;
+            padding: 15px 25px;
+            border: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .donate-btn:hover {
+            background-color: #218838;
+        }
+
+        .impact {
+            background-color: #f8f9fa;
+            padding: 50px 0;
+        }
+
+        .blog-post {
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">School Builders Charity: Website Made By ALi Ahmad</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#donate">Donate</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#impact">Impact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>Build Schools, Change Lives</h1>
+            <p>Your donations help construct schools for children in needy communities, providing education and hope.</p>
+            <a href="#donate" class="donate-btn">Donate Now</a>
+        </div>
+    </section>
+
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>We are a nonprofit dedicated to building schools in underserved areas. Every rupee funds materials, labor, and resources to create safe learning environments.</p>
+        </div>
+    </section>
+
+    <section id="donate" class="py-5 bg-light">
+        <div class="container">
+            <h2>Make a Donation</h2>
+            <p>Choose an amount and payment method. Help us reach our goal of $100,000 for the next school.</p>
+            <form action="/donate" method="post"> <!-- Replace with real payment endpoint -->
+                <div class="mb-3">
+                    <label for="amount" class="form-label">Donation Amount (PKR)</label>
+                    <input type="number" class="form-control" id="amount" min="1" required>
+                </div>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Payment Method</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="payment" id="bank" value="bank" required>
+                        <label class="form-check-label" for="bank">
+                            Bank of Pakistan (Direct Transfer)
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="payment" id="easypaisa" value="easypaisa">
+                        <label class="form-check-label" for="easypaisa">
+                            Easypaisa
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="payment" id="jazzcash" value="jazzcash">
+                        <label class="form-check-label" for="jazzcash">
+                            JazzCash
+                        </label>
+                    </div>
+                </div>
+                <div id="payment-details" class="mb-3" style="display: none;">
+                    <p id="details-text"></p>
+                </div>
+                <button type="submit" class="donate-btn">Submit Donation</button>
+            </form>
+            <p class="mt-3">Payments are secure and processed locally. For international donors, consider PayPal (add as an option).</p>
+        </div>
+    </section>
+
+    <section id="impact" class="impact">
+        <div class="container">
+
+
+            Every child deserves a classroom, not a compromise.
+            Help us build schools where needy children can learn, dream, and succeed.
+
+        </div>
+        <div class="col-md-4">
+            <h3>Upcoming Project</h3>
+            <p>Next school in need: $50,000 raised so far. Join us!</p>
+        </div>
+        </div> Thousands of children want to learn but have no school to go to.
+        Your donation can turn empty land into a place of hope, learning, and opportunity.
+        </div> Together, we can make education accessible for all. Your support helps us build safe schools where every child gets an equal chance to learn.
+    </section>
+
+    <section id="blog" class="py-5">
+        <div class="container">
+
+
+        </div>Build a school. Change a life. Shape the future.
+        Donate today and become a part of the journey toward education for all.
+        </div>
+    </section>
+
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Email: ali.ben9626@gmail.com | Phone: 03407918743 | Address: Sitara Valley phase 5 428-P </p>
+            <form>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send</button>
+            </form>
+        </div> DSIGNED BY: ALI AHMAD
+    </section>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2026 School Builders Charity. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const radios = document.querySelectorAll('input[name="payment"]');
+            const detailsDiv = document.getElementById('payment-details');
+            const detailsText = document.getElementById('details-text');
+
+            radios.forEach(radio => {
+                radio.addEventListener('change', function() {
+                    detailsDiv.style.display = 'block';
+                    if (this.value === 'bank') {
+                        detailsText.innerHTML = 'Transfer to: Account Name: School Builders Charity, IBAN: xxxxxxxxxxxxxxxx, Bank: [Your Bank Name]. Reference: Your Name.';
+                    } else if (this.value === 'easypaisa') {
+                        detailsText.innerHTML = 'Send to: Mobile Number: 03407918743 . Use your Easypaisa app and mention "Donation".';
+                    } else if (this.value === 'jazzcash') {
+                        detailsText.innerHTML = 'Send to: Mobile Number: 03407918743 . Use JazzCash app and reference "School Donation".';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
